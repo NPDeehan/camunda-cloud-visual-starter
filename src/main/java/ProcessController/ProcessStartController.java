@@ -68,7 +68,7 @@ public class ProcessStartController {
         final ProcessInstanceEvent event = client.newCreateInstanceCommand()
                 .bpmnProcessId(processRequest.processKey)
                 .latestVersion()
-                .variables(Map.of("message", processRequest.processVars))
+                .variables(processRequest.processVars)
                 .send()
                 .join();
 
