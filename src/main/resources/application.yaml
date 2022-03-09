@@ -1,0 +1,10 @@
+server:
+  port : 8082
+
+zeebe:
+  client:
+    cloud:
+      region: bru-2
+      clusterId: 46c7c70b-9c71-4dfd-a49e-bb478ccc2409
+      clientId: Es-sRrbZkGhRBK5lO0fkSKDoWyvF3qdd
+      clientSecret: p3jFgZ5nLDjGXElLLy2tuvFq02ll~58E7065SV38-X0XAbL4J6~yw5Xf-Dc5aZwN
