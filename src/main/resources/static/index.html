@@ -16,7 +16,7 @@
           href="css/styles.css">
     <script src="/webjars/sockjs-client/sockjs.min.js"></script>
     <script src="/webjars/stomp-websocket/stomp.min.js"></script>
-    <title>Welcome to Kaffee und Kuchen</title>
+    <title>Camunda Cloud Starter</title>
 </head>
 <body>
 
@@ -29,20 +29,28 @@
                 <form id="form">
                     <div class="input-group mb-3">
                         <label>Process Key</label>
-                        <input type="text" id="ProcessKey" name="ProcessKey" class="form-control" placeholder="The key of a deployed Process" aria-label="Type something" aria-describedby="button-addon2">
+                        <input type="text" id="ProcessKey" name="ProcessKey" class="form-control"
+                               placeholder="The key of a deployed Process" aria-label="Type something"
+                               aria-describedby="button-addon2">
                     </div>
-                    <div class="input-group mb-3">
-                        <label>Process Variable</label>
-                        <input type="text" id="Message" name="Message" class="form-control" placeholder="Enter a variable to be sent to the process" aria-label="Type something" aria-describedby="button-addon2">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Process Payload</span>
+                        </div>
+                        <textarea type="text" id="Message" name="Message"
+                                  placeholder="Enter a json-variable to be sent to the process"
+                                  class="form-control textarea-autosize"
+                                  rows="1"
+                                  aria-label="Type something" aria-describedby="button-addon2"
+                                  class="form-control"></textarea>
                     </div>
 
                     <div class="input-group mb-3">
-                        <input type="submit"  class="btn btn-primary"/>
+                        <input type="submit" class="btn btn-primary"/>
                     </div>
                 </form>
             </div>
-        </div>
-        <div class="col-6">
+
             <div class="response"></div>
         </div>
     </div>

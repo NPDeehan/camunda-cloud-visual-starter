@@ -25,6 +25,24 @@
   -webkit-animation: load6 1.7s infinite ease, round 1.7s infinite ease;
   animation: load6 1.7s infinite ease, round 1.7s infinite ease;
 }
+
+textarea.textarea-autosize {
+  height: 2.25rem;
+  min-height: 2.25rem;
+  resize: none;
+  overflow-y:hidden;
+}
+
+textarea.textarea-autosize.form-control-lg {
+  height: 3.75rem;
+  min-height: 3.75rem;
+}
+
+textarea.textarea-autosize.form-control-sm {
+  height: 2rem;
+  min-height: 2rem;
+}
+
 @-webkit-keyframes load6 {
   0% {
     box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
