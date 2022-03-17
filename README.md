@@ -27,7 +27,7 @@ Now you've deployed your process and you can use this app to start is.
 ## How to Start a process instance
 
 You can go to `http://localhost:8082` to find this lovely little front end
-![frontEnd](./src/main/resources/img/frontendscreenshot.png)
+![frontEnd](./src/main/resources/img/frontend.png)
 
 You just need to add the Key of your process (if you deployed the test process this is `TestProcess`)
 
